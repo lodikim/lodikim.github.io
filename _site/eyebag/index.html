@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title> EyeBAG: Accurate Control of Eye Blink and Gaze Based on Data Augmentation Leveraging Style Mixing </title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> EyeBAG: Accurate Control of Eye Blink and Gaze Based on Data Augmentation Leveraging Style Mixing </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank"> Bryan S Kim </a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank"> Jeong Young Jeong </a><sup>2</sup>, </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank"> Wonjong Ryu </a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> KAIST<br><sup>2</sup> Innerverz</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/title.png" alt="title"/>
+      <!--
+      <h2 class="subtitle has-text-centered">
+        Controlling eye blink and gaze of Emma Watson as Hermione Granger in the Harry Potter series <br>
+        Top Left: Source image. Top Center: Blink controlled image. Top Right: Gaze redirected image. <br>
+        Eye regions are magnified below each image.
+      </h2>
+    -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent developments in generative models have enabled the generation of photo-realistic human face images, and downstream tasks utilizing face generation technology have advanced accordingly.
+            However, models for downstream tasks are yet substandard at eye control (e.g. blink, gaze redirection).
+            To overcome such eye control problems, we introduce a novel framework consisting of two distinct modules: a blink control module and a gaze redirection module.
+            We also propose a novel data augmentation method to train each module, leveraging style mixing to obtain images with desired features.
+            We show that our framework produces eye-controlled images of high quality, and demonstrate how it can be used to improve the performance of downstream tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <br>
+      <h2 class="title is-3 has-text-centered"> Overview of the EyeBAG Model </h2>
+      <br>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/overview.png" alt="fig2"/>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Overview Image -->
+
+<!-- Blink Control GIF -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <br>
+      <h2 class="title is-3"> Blink Control </h2>
+      <br>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/gifs/result_face_W.gif" width="48%" style="float: left;">
+        <img src="static/gifs/result_face_ol.gif" width="48%" style="float: right;">
+     </div>
+   </div>
+  </div>
+</section>
+<!-- End Blink Control GIF -->
+
+<!-- Blink Control Carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/blink_module.png"/>
+          <h2 class="subtitle has-text-centered">
+            <br><br>
+            <b>Blink Control Module</b>
+          </h2>
+          <h2 class="subtitle">
+            An open eye image is encoded and input to an Adaptive Instance Normalization Residual Block (AdaIN ResBlock), along with a blink score of either 0, 0.5, or 1.
+            Blink scores of 0 and 0.5 cause generation of closed eye images and uncertain eye images, respectively. Blink scores of 1 cause reconstruction of open eye images.
+            These blink scores pass through a trainable multilayer perceptron (MLP). Closed eye and uncertain eye generation are learned simultaneously to effectively learn the entire blinking process,
+            as uncertain eyes serve as the intermediate stage between being ‘open’ and ‘closed’.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <p style="text-align: center;"><img src="static/images/blink_images.png" width="90%"/></p>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <b>Image Generation by the Blink Control Module</b>
+          </h2>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Blink Control Carousel -->
+
+<!-- Gaze Redirection GIF -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <br>
+      <h2 class="title is-3"> Gaze Redirection </h2>
+      <br>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/gifs/result_face_W_eye.gif" width="48%" style="float: left">
+        <img src="static/gifs/result_face_ol_aligned.gif" width="48%" style="float: right;">
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/gifs/result_reyes_W_mask.gif" width="24%" style="float: left">
+      <img src="static/gifs/result_reyes_W_eye.gif" width="24%" style="float: left;">
+      <img src="static/gifs/result_reyes_ol_aligned.gif" width="24%" style="float: right;">
+      <img src="static/gifs/result_reyes_ol_aligned_mask.gif" width="24%" style="float: right">
+   </div>
+   </div>
+  </div>
+</section>
+<!-- End Gaze Redirection GIF -->
+
+<!-- Gaze Redirection Carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/gaze_module.png"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <b>Gaze Redirection Module</b>
+          </h2>
+          <h2 class="subtitle">
+            Data preprocessing is done for each eye image in the dataset to create an empty-eye image, cropped iris mask, and eye style image.
+            The task of the module generator is to reconstruct the GT image based on the three inputs.
+          </h2>
+          <br>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <p style="text-align: center;"><img src="static/images/gaze_images.png" width="70%"/></p>
+          <h2 class="subtitle">
+            <br><br>
+            Input of horizontal shift value and vertical shift value is all that is needed to create a gaze-redirected image.
+            Any value can be input as the horizontal or vertical shift amount, allowing for gaze redirection with complete freedom.
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b>Eye Roll Grid</b>
+          </h2>
+          <!-- Your image here -->
+          <p style="text-align: center; vertical-align: bottom;"><img src="static/images/eye_roll_grid.png" width="80%"/></p>
+        </div>
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b>Iris Style Transfer</b>
+          </h2>
+          <!-- Your image here -->
+          <p style="text-align: center; vertical-align: bottom;"><img src="static/images/iris_style_transfer.png" width="50%"/></p>
+          <h2 class="subtitle">
+            <br>
+            Iris style is preserved with high quality, and iris styles of other face images can be transferred to the original image.
+            For the figure above, all three images on the bottom row use the same empty-eye image and cropped iris mask, but use a different eye style image.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Gaze Redirection Carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <br>
+      <h2 class="title is-3"> Applications </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h2 class="title has-text-centered">
+            <b> Blink Detection </b>
+          </h2>
+          <!-- Your image here -->
+          <p style="text-align: center; vertical-align: bottom;"><img src="static/images/blink_detection.png" width="70%"/></p>
+          <h2 class="subtitle">
+            <br>
+            Blink score measurement is highly accurate and consistent. Thus, the blink control module can be used as a pre-trained blink detection network.
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="title has-text-centered">
+            <b> Performance Enhancement of Downstream Tasks </b>
+          </h2>
+          <!-- Your image here -->
+          <p style="text-align: center; vertical-align: bottom;"><img src="static/images/downstream_tasks.png" width="70%"/></p>
+          <h2 class="subtitle">
+            <br>
+            Performance of face swapping downstream tasks is enhanced by data supplement.
+            When the face swapping target has eyes closed, models trained only on FFHQ give poor results.
+            Supplementing the model with blink data generated by EyeBAG improves performance.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+<!-- Paper poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Paper</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTex Code Here</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
