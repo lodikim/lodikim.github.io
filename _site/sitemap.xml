@@ -2,7 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/eyebag/</loc>
-<lastmod>2023-06-29T12:36:50+09:00</lastmod>
+<lastmod>2023-07-04T10:34:42+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/eyebag/static/pdfs/EyeBAG_paper.pdf</loc>
+<lastmod>2023-07-04T10:26:12+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/eyebag/static/pdfs/sample.pdf</loc>
